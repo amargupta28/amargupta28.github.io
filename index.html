@@ -4,246 +4,182 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amar Gupta | Senior Software Engineer</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-      color: #222;
-      background: #f9f9f9;
+      background: #f8f9fa;
     }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 1rem;
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
+    .profile-pic {
+      width: 160px;
+      height: 160px;
       object-fit: cover;
-      border: 3px solid #0078d7;
+      border-radius: 50%;
+      border: 3px solid #0d6efd;
     }
-    header h1 {
-      font-size: 2.2rem;
-      margin: 0;
-    }
-    header h2 {
-      margin-top: 0.2rem;
-      font-weight: normal;
-      color: #555;
-    }
-    section {
-      margin-bottom: 2rem;
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-    }
-    section h3 {
-      border-bottom: 2px solid #0078d7;
-      padding-bottom: 0.25rem;
-      margin-bottom: 1rem;
-      color: #0078d7;
-    }
-    ul {
-      list-style: disc inside;
-      padding-left: 0;
-    }
-    a {
-      color: #0078d7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-list, .skills-list, .languages-list, .certifications-list, .awards-list {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .contact-list li, .skills-list li, .languages-list li, .certifications-list li, .awards-list li {
-      margin-bottom: 0.4rem;
-    }
-    .experience, .education {
-      margin-top: 1rem;
-    }
-    .job, .education-item {
-      margin-bottom: 1.2rem;
-    }
-    .job-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    .job-company {
-      font-style: italic;
-      color: #555;
-    }
-    .job-date {
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .job-desc {
-      margin-top: 0.3rem;
-      padding-left: 1.2rem;
+    footer {
+      color: #6c757d;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/55019310?v=4" alt="Amar Gupta" />
-    <div>
-      <h1>Amar Gupta</h1>
-      <h2>Senior Software Engineer @ McKinsey & Company</h2>
-      <p>Full Stack Developer | Python | Angular | SQL | TPM | Tableau Specialist Certified | Azure Fundamental Certified</p>
-      <p>Chicago, Illinois, United States</p>
-    </div>
-  </header>
+  <div class="container my-5 bg-white p-4 rounded shadow-sm">
+    <header class="d-flex align-items-center gap-4 border-bottom pb-3 mb-4">
+      <img
+        src="https://avatars.githubusercontent.com/u/55019310?v=4"
+        alt="Amar Gupta"
+        class="profile-pic"
+      />
+      <div>
+        <h1 class="h2 mb-1">Amar Gupta</h1>
+        <h2 class="h5 text-muted">Senior Software Engineer @ McKinsey & Company</h2>
+        <p class="mb-0">
+          Full Stack Developer | Python | Angular | SQL | TPM | Tableau Specialist Certified | Azure Fundamental Certified
+        </p>
+        <small class="text-muted">Chicago, Illinois, United States</small>
+      </div>
+    </header>
 
-  <section>
-    <h3>Contact</h3>
-    <ul class="contact-list">
-      <li>Email: <a href="mailto:amar17gupta@gmail.com">amar17gupta@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/amargupta28/" target="_blank" rel="noopener">linkedin.com/in/amargupta28</a></li>
-      <li>GitHub: <a href="https://github.com/amargupta28" target="_blank" rel="noopener">github.com/amargupta28</a></li>
-    </ul>
-  </section>
+    <section class="mb-4">
+      <h3>Contact</h3>
+      <ul class="list-unstyled">
+        <li>Email: <a href="mailto:amar17gupta@gmail.com">amar17gupta@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/amargupta28/" target="_blank" rel="noopener">linkedin.com/in/amargupta28</a></li>
+        <li>GitHub: <a href="https://github.com/amargupta28" target="_blank" rel="noopener">github.com/amargupta28</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Top Skills</h3>
-    <ul class="skills-list">
-      <li>GitHub Actions</li>
-      <li>Data Build Tool (DBT)</li>
-      <li>Python & Django Full Stack Development</li>
-    </ul>
-
-    <h3>Languages</h3>
-    <ul class="languages-list">
-      <li>English</li>
-      <li>Hindi</li>
-    </ul>
-
-    <h3>Certifications</h3>
-    <ul class="certifications-list">
-      <li>Introduction to Microsoft Azure Cloud Services</li>
-      <li>Python and Django Full Stack Web Developer Bootcamp</li>
-      <li>Microsoft Certified: Azure Fundamentals</li>
-      <li>Foundations of Project Management</li>
-      <li>Python Data Structures</li>
-    </ul>
-
-    <h3>Honors & Awards</h3>
-    <ul class="awards-list">
-      <li>The Award For Excellence</li>
-      <li>Insta Award</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Summary</h3>
-    <p>
-      Detail-oriented, responsible, and committed software developer with strong analytical, problem-solving,
-      and client and project management skills. Get-it-done, on-time, and high quality product spirit, with 5+ years of experience
-      defining requirements, designing, implementing, and delivering complex back-end and web applications using
-      a variety of programming languages and technologies.
-    </p>
-    <p>
-      Demonstrated ability to work in teams and to lead others.
-      Successful track record coordinating internal and external teams to develop new products, project delivery, program management, and product management.
-    </p>
-  </section>
-
-  <section>
-    <h3>Experience</h3>
-
-    <div class="experience">
-      <div class="job">
-        <div class="job-title">Senior Software Engineer 1</div>
-        <div class="job-company">McKinsey & Company</div>
-        <div class="job-date">January 2024 - Present (1 year 5 months), Chicago, Illinois, United States</div>
-        <ul class="job-desc">
-          <li>Led data migration from AWS Gov Cloud to Databricks, automating processes and increasing migration rate from 50 tables/day to 3000/day.</li>
-          <li>Led migration of 27k tables on tight deadlines, fostering communication and positive work environment.</li>
-          <li>Mentored team members and promoted peer collaboration and inclusivity.</li>
-          <li>Participated in agile ceremonies, story estimation, backlog refinement, and led stand-up meetings.</li>
-          <li>Decommissioned unneeded projects, saving ~$7,000 monthly.</li>
-          <li>Partnered on Table Deletion project, saving ~$40,000 monthly.</li>
+    <section class="mb-4 row">
+      <div class="col-md-6">
+        <h3>Top Skills</h3>
+        <ul>
+          <li>GitHub Actions</li>
+          <li>Data Build Tool (DBT)</li>
+          <li>Python & Django Full Stack Development</li>
         </ul>
       </div>
-
-      <div class="job">
-        <div class="job-title">Senior Software Engineer</div>
-        <div class="job-company">McKinsey & Company</div>
-        <div class="job-date">October 2022 - December 2023 (1 year 3 months), Chicago, Illinois, United States</div>
-        <ul class="job-desc">
-          <li>Conducted POC using Databricks for orchestration, improving data ingestion speed by 20%.</li>
-          <li>Redesigned database using Closure table approach, reducing query time by 92%.</li>
+      <div class="col-md-6">
+        <h3>Languages</h3>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
         </ul>
       </div>
+    </section>
 
-      <div class="job">
-        <div class="job-title">Associate / Senior Software Developer</div>
-        <div class="job-company">Goldman Sachs</div>
-        <div class="job-date">August 2022 - September 2022 (2 months), Salt Lake City, Utah, United States</div>
-      </div>
+    <section class="mb-4">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Introduction to Microsoft Azure Cloud Services</li>
+        <li>Python and Django Full Stack Web Developer Bootcamp</li>
+        <li>Microsoft Certified: Azure Fundamentals</li>
+        <li>Foundations of Project Management</li>
+        <li>Python Data Structures</li>
+      </ul>
+    </section>
 
-      <div class="job">
-        <div class="job-title">Technical Project Manager</div>
-        <div class="job-company">Nissha Medical Technologies</div>
-        <div class="job-date">November 2021 - December 2021 (2 months), Buffalo, New York, United States</div>
-        <ul class="job-desc">
-          <li>Automated extraction of order data from multi-level XML to Microsoft SQL Server using Python, reducing manual effort by 95%.</li>
-          <li>Collaborated with stakeholders weekly to gather requirements and deliver proof of concept.</li>
+    <section class="mb-4">
+      <h3>Honors & Awards</h3>
+      <ul>
+        <li>The Award For Excellence</li>
+        <li>Insta Award</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h3>Summary</h3>
+      <p>
+        Detail-oriented, responsible, and committed software developer with strong analytical,
+        problem-solving, client and project management skills.
+        Get-it-done, on-time, and high quality product spirit with 5+ years experience designing and delivering
+        complex back-end and web applications.
+      </p>
+      <p>
+        Demonstrated ability to work in teams and lead others.
+        Successful track record coordinating internal and external teams for product and project management.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h3>Experience</h3>
+
+      <article class="mb-3">
+        <h5>Senior Software Engineer 1 <small class="text-muted">| McKinsey & Company</small></h5>
+        <p class="text-muted">Jan 2024 - Present | Chicago, Illinois, United States</p>
+        <ul>
+          <li>Led data migration from AWS Gov Cloud to Databricks, automating and increasing migration rate from 50 to 3000 tables/day.</li>
+          <li>Led migration of 27k tables, fostering communication and positive environment.</li>
+          <li>Mentored team members promoting collaboration and inclusivity.</li>
+          <li>Participated in agile ceremonies and led stand-up meetings.</li>
+          <li>Decommissioned projects saving ~$7,000 monthly.</li>
+          <li>Partnered on Table Deletion project saving ~$40,000 monthly.</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="job">
-        <div class="job-title">Senior Software Development Engineer / Technology Analyst</div>
-        <div class="job-company">Infosys Limited</div>
-        <div class="job-date">December 2018 - August 2021 (2 years 9 months), Pune Area, India</div>
-        <ul class="job-desc">
-          <li>Led a team of 4 in onshore-offshore model and assisted with post go-live issues.</li>
-          <li>Created RESTful APIs with Django backend and Angular 4 frontend, reducing manual effort by 85%.</li>
-          <li>Built Python scripts to automate error handling on virtual machines, reducing manual effort by 65%.</li>
-          <li>Managed project updates and ensured cross-functional alignment.</li>
-          <li>Designed and migrated UI code from Angular 4 to Angular 8.</li>
-          <li>Authored technical design and test plan documents.</li>
-          <li>Automated deployment using Ansible playbooks, reducing manual effort by 95%.</li>
+      <article class="mb-3">
+        <h5>Senior Software Engineer <small class="text-muted">| McKinsey & Company</small></h5>
+        <p class="text-muted">Oct 2022 - Dec 2023 | Chicago, Illinois, United States</p>
+        <ul>
+          <li>Conducted POC for Databricks orchestration, improving data ingestion speed by 20%.</li>
+          <li>Redesigned database using Closure table approach reducing query time by 92%.</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="job">
-        <div class="job-title">Software Developer</div>
-        <div class="job-company">Wipro</div>
-        <div class="job-date">December 2015 - December 2018 (3 years 1 month), Bengaluru, Karnataka, India</div>
-        <ul class="job-desc">
-          <li>Full stack developer for Wipro IPs in Analytics.</li>
-          <li>Delivered end-to-end solutions single-handedly.</li>
+      <article class="mb-3">
+        <h5>Associate / Senior Software Developer <small class="text-muted">| Goldman Sachs</small></h5>
+        <p class="text-muted">Aug 2022 - Sep 2022 | Salt Lake City, Utah, United States</p>
+      </article>
+
+      <article class="mb-3">
+        <h5>Technical Project Manager <small class="text-muted">| Nissha Medical Technologies</small></h5>
+        <p class="text-muted">Nov 2021 - Dec 2021 | Buffalo, New York, United States</p>
+        <ul>
+          <li>Automated XML order data extraction into SQL Server using Python, reducing manual effort by 95%.</li>
+          <li>Collaborated with stakeholders weekly to gather requirements and deliver proofs of concept.</li>
+        </ul>
+      </article>
+
+      <article class="mb-3">
+        <h5>Senior Software Development Engineer / Technology Analyst <small class="text-muted">| Infosys Limited</small></h5>
+        <p class="text-muted">Dec 2018 - Aug 2021 | Pune Area, India</p>
+        <ul>
+          <li>Led a 4-person team and assisted with post go-live issues.</li>
+          <li>Created REST APIs with Django and Angular frontend, reducing manual effort by 85%.</li>
+          <li>Automated error handling scripts in Python reducing manual effort by 65%.</li>
+          <li>Managed project updates and ensured cross-team alignment.</li>
+          <li>Migrated UI code from Angular 4 to Angular 8.</li>
+          <li>Authored technical design and test plans.</li>
+          <li>Automated deployment with Ansible playbooks reducing manual effort by 95%.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h5>Software Developer <small class="text-muted">| Wipro</small></h5>
+        <p class="text-muted">Dec 2015 - Dec 2018 | Bengaluru, Karnataka, India</p>
+        <ul>
+          <li>Full stack developer for Wipro IPs in Analytics, delivered many end-to-end solutions.</li>
           <li>Worked with Java, Node.js, Angular, Python, Django, Jenkins, and more.</li>
-          <li>Created Alexa skills using AWS Lambda.</li>
-          <li>Implemented MVC design patterns extensively.</li>
+          <li>Created Alexa skills with AWS Lambda.</li>
+          <li>Implemented MVC design patterns.</li>
         </ul>
-      </div>
-    </div>
-  </section>
+      </article>
+    </section>
 
-  <section>
-    <h3>Education</h3>
-    <div class="education">
-      <div class="education-item">
-        <strong>University at Buffalo School of Management, The State University of New York</strong><br/>
-        Master of Science - MS, Management Information Systems (September 2021 - June 2022)
-      </div>
-    </div>
-  </section>
+    <section class="mb-4">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>University at Buffalo School of Management</strong>, MS Management Information Systems (Sep 2021 - Jun 2022)</li>
+        <li><strong>Rajiv Gandhi Prodyogiki Vishwavidyalaya</strong>, Bachelor's in Electrical, Electronics & Communications Engineering (2011 - 2015)</li>
+        <li><strong>Sagar Public School</strong>, Physics, Chemistry, Maths, Computer Science (2010 - 2011)</li>
+      </ul>
+    </section>
 
-  <footer style="text-align:center; color:#666; font-size:0.9rem; margin:2rem 0;">
-    © 2025 Amar Gupta. All rights reserved.
-  </footer>
+    <footer class="text-center my-4">
+      © 2025 Amar Gupta. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS Bundle (optional for components like modals) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
