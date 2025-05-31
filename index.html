@@ -3,69 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amar Gupta - Senior Software Engineer</title>
+  <title>Amar Gupta – Senior Software Engineer</title>
   <style>
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #2e3a59;
       line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header, footer {
-      text-align: center;
-      padding: 10px 0;
-      margin-bottom: 30px;
-    }
-    h1 {
-      margin-bottom: 0;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     a {
-      color: #0a66c2;
+      color: #0073b1;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     a:hover {
+      color: #005582;
       text-decoration: underline;
     }
-    section {
-      margin-bottom: 40px;
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #1a244f;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #d1d9e6;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #bbb url('https://avatars.githubusercontent.com/u/55019310?v=4') no-repeat center/cover;
+      margin: 0 auto 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-links {
+      margin-top: 10px;
+      font-weight: 600;
     }
     .contact-links a {
-      margin: 0 10px;
-      font-weight: bold;
+      margin: 0 15px;
+      font-size: 1rem;
     }
-    ul.skills, ul.languages, ul.certifications, ul.honors {
-      list-style: disc inside;
+    section {
+      margin-top: 40px;
+    }
+    ul {
       padding-left: 20px;
     }
+    li {
+      margin-bottom: 8px;
+    }
+    .job, .education {
+      margin-bottom: 25px;
+    }
     .job-title {
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 3px;
+      color: #0a2a66;
     }
     .company, .duration, .location {
       font-style: italic;
-      color: #666;
-      font-size: 0.9em;
+      color: #6b7280;
+      font-size: 0.9rem;
     }
-    pre {
-      background: #eaeaea;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
+    .job ul {
+      margin-top: 8px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      text-align: center;
+      border-top: 1px solid #d1d9e6;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+      .contact-links a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="profile-pic" aria-label="Amar Gupta Profile Picture"></div>
     <h1>Amar Gupta</h1>
     <p>Senior Software Engineer @ McKinsey & Company</p>
     <p>Full Stack Developer | Python | Angular | SQL | TPM | Azure Certified</p>
     <div class="contact-links">
-      <a href="mailto:amar17gupta@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/amargupta28/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-      <a href="https://github.com/amargupta28" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:amar17gupta@gmail.com" aria-label="Send Email">Email</a> |
+      <a href="https://www.linkedin.com/in/amargupta28/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a> |
+      <a href="https://github.com/amargupta28" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
     </div>
   </header>
 
@@ -80,16 +124,18 @@
 
   <section>
     <h2>Top Skills</h2>
-    <ul class="skills">
-      <li>GitHub Action</li>
+    <ul>
+      <li>GitHub Actions</li>
       <li>Data Build Tool (DBT)</li>
-      <li>Dbt</li>
+      <li>Python, Django, Angular</li>
+      <li>SQL, Tableau Desktop</li>
+      <li>Cloud: Microsoft Azure Fundamentals</li>
     </ul>
   </section>
 
   <section>
     <h2>Languages</h2>
-    <ul class="languages">
+    <ul>
       <li>English</li>
       <li>Hindi</li>
     </ul>
@@ -97,7 +143,7 @@
 
   <section>
     <h2>Certifications</h2>
-    <ul class="certifications">
+    <ul>
       <li>Introduction to Microsoft Azure Cloud Services</li>
       <li>Python and Django Full Stack Web Developer Bootcamp</li>
       <li>Microsoft Certified: Azure Fundamentals</li>
@@ -108,7 +154,7 @@
 
   <section>
     <h2>Honors & Awards</h2>
-    <ul class="honors">
+    <ul>
       <li>The Award For Excellence</li>
       <li>Insta Award</li>
     </ul>
@@ -117,7 +163,7 @@
   <section>
     <h2>Experience</h2>
 
-    <article>
+    <article class="job">
       <p class="job-title">Senior Software Engineer 1</p>
       <p class="company">McKinsey & Company</p>
       <p class="duration">Jan 2024 – Present (1 year 5 months)</p>
@@ -125,77 +171,16 @@
       <ul>
         <li>Led data migration from AWS Gov Cloud to Databricks, automating and increasing migration rate by 60x.</li>
         <li>Mentored team members and fostered a collaborative work environment.</li>
-        <li>Contributed to agile ceremonies, backlog refinement, and led stand-ups when required.</li>
+        <li>Participated actively in agile ceremonies and backlog refinement.</li>
         <li>Implemented projects leading to monthly cost avoidance of ~$47,000.</li>
       </ul>
     </article>
 
-    <article>
+    <article class="job">
       <p class="job-title">Senior Software Engineer</p>
       <p class="company">McKinsey & Company</p>
       <p class="duration">Oct 2022 – Dec 2023 (1 year 3 months)</p>
       <p class="location">Chicago, Illinois, United States</p>
       <ul>
         <li>Proof of concept for Databricks orchestration, improving ETL speed by 20%.</li>
-        <li>Redesigned database, reducing query time by 92%.</li>
-      </ul>
-    </article>
-
-    <article>
-      <p class="job-title">Associate / Senior Software Developer</p>
-      <p class="company">Goldman Sachs</p>
-      <p class="duration">Aug 2022 – Sep 2022 (2 months)</p>
-      <p class="location">Salt Lake City, Utah, United States</p>
-    </article>
-
-    <article>
-      <p class="job-title">Technical Project Manager</p>
-      <p class="company">Nissha Medical Technologies</p>
-      <p class="duration">Nov 2021 – Dec 2021 (2 months)</p>
-      <p class="location">Buffalo, New York, United States</p>
-      <ul>
-        <li>Automated order data extraction, reducing manual effort by 95%.</li>
-        <li>Collaborated with clients to gather requirements and deliver solutions.</li>
-      </ul>
-    </article>
-
-    <article>
-      <p class="job-title">Senior Software Development Engineer / Technology Analyst</p>
-      <p class="company">Infosys Limited</p>
-      <p class="duration">Dec 2018 – Aug 2021 (2 years 9 months)</p>
-      <p class="location">Pune Area, India</p>
-      <ul>
-        <li>Led a 4-person team in onshore-offshore model.</li>
-        <li>Created RESTful APIs with Django, reducing manual effort by 85%.</li>
-        <li>Built Python scripts to analyze virtual machines, reducing effort by 65%.</li>
-        <li>Authored high level design, test plans, and participated in SDLC processes.</li>
-      </ul>
-    </article>
-
-    <article>
-      <p class="job-title">Software Developer</p>
-      <p class="company">Wipro</p>
-      <p class="duration">Dec 2015 – Dec 2018 (3 years 1 month)</p>
-      <p class="location">Bengaluru, Karnataka, India</p>
-      <ul>
-        <li>Full stack developer for analytics solutions using Java, Node.js, Angular, Python, Django, Jenkins, and AWS Lambda.</li>
-        <li>Designed and developed multiple end-to-end solutions independently.</li>
-      </ul>
-    </article>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><strong>University at Buffalo School of Management, SUNY</strong></p>
-    <p>Master of Science - MS, Management Information Systems (Sep 2021 - Jun 2022)</p>
-    <p><strong>Rajiv Gandhi Prodyogiki Vishwavidyalaya</strong></p>
-    <p>Bachelor's Degree, Electrical, Electronics and Communications Engineering (2011 - 2015)</p>
-    <p><strong>Sagar Public School</strong></p>
-    <p>Physics, Chemistry, Maths, Computer Science (2010 - 2011)</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Amar Gupta | <a href="https://www.linkedin.com/in/amargupta28/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/amargupta28" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-  </footer>
-</body>
-</html>
+        <li>Redesigned database, reducing query tim
